@@ -22,7 +22,7 @@ def inicio():
 def novo():
     return render_template('novo.html', titulo='novo jogo')
 
-@app.route('/criar',  methods=['POST',])
+@app.route('/criar', methods=['POST',])
 def criar():
     nome = request.form['nome']
     categoria = request.form['categoria']
